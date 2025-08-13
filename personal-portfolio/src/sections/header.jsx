@@ -34,8 +34,8 @@ const Header = () => {
         {
           autoAlpha: 1,
           x: 0,
-          stagger: 0.1,
-          duration: 0.5,
+          stagger: 0.2,
+          duration: 0.6,
           ease: "power2.out",
         },
         ">"
@@ -105,21 +105,19 @@ const Header = () => {
         className="fixed z-50 flex flex-col justify-between w-full h-full px-10 uppercase bg-black text-white/80 py-28 gap-y-10 md:w-1/2 md:left-1/2 "
       >
         <div className="flex flex-col text-5xl gap-y-2 md:text-6xl lg:text-8xl">
-          {["home", "services", "about", "work", "contact"].map(
-            (section, index) => (
-              <div key={index} ref={(el) => (linksRef.current[index] = el)}>
-                <Link
-                  className="transition-all duration-300 cursor-pointer hover:text-white"
-                  to={section}
-                  smooth
-                  offset={0}
-                  duration={1000}
-                >
-                  {section}
-                </Link>
-              </div>
-            )
-          )}
+          {["home", "about", "work", "contact"].map((section, index) => (
+            <div key={index} ref={(el) => (linksRef.current[index] = el)}>
+              <Link
+                className="transition-all duration-300 cursor-pointer hover:text-white"
+                to={section}
+                smooth
+                offset={0}
+                duration={1000}
+              >
+                {section}
+              </Link>
+            </div>
+          ))}
         </div>
         <div
           ref={contactRef}

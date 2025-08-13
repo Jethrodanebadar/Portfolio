@@ -1,12 +1,18 @@
+import ReactLenis from "lenis/react";
+import About from "./sections/About";
 import Header from "./sections/header";
 import Hero from "./sections/Hero";
+import Skills from "./sections/Skills";
 
 const App = () => {
   return (
-    <main>
+    <ReactLenis root className="relative w-screen min-h-screen">
       <Header />
       <Hero />
-    </main>
+      <Skills />
+      <About />
+      <section className="h-screen"></section>
+    </ReactLenis>
   );
 };
 
