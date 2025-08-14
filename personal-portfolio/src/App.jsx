@@ -3,6 +3,7 @@ import About from "./sections/About";
 import Header from "./sections/header";
 import Hero from "./sections/Hero";
 import Skills from "./sections/Skills";
+import Work from "./sections/Work";
 
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
       <Hero />
       <Skills />
       <About />
-      <section className="h-screen"></section>
+      <Work />
     </ReactLenis>
   );
 };

@@ -10,15 +10,12 @@ const About = () => {
     "Passionate on creating software to help and solve real world problems";
   const aboutText = `Obsessed with building fast, intuitive apps—from pixel-perfect React UIs to bulletproof serverless backends. Every line of code is a promise: quality that users feel.
 
-  When I’m not shipping:
+  When I’m not working:
 
-⚡️ Open-sourcing my latest experiment (or hacking on yours)
+🎨 I am learning how to draw.
 
-🎥 Teaching devs on Twitch/YouTube—because rising tides lift all ships
 
-🧗 Rock climbing (problem-solving with real stakes)
-
-🎸 Strumming chords while CI pipelines pass (multitasking at its finest)`;
+🎸 Enjoying music while CI pipelines pass (multitasking at its finest)`;
   useGSAP(() => {
     gsap.to("#about", {
       scale: 0.95,
