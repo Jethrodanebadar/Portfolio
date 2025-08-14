@@ -13,7 +13,7 @@ const Work = () => {
         withScrollTrigger={true}
       />
       <div className="relative flex flex-col font-light">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <div
             key={project.id}
             id="project"
