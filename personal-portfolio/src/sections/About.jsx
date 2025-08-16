@@ -18,7 +18,7 @@ const About = () => {
 🎸 Enjoying music while CI pipelines pass (multitasking at its finest)`;
   useGSAP(() => {
     gsap.to("#about", {
-      scale: 0.95,
+      scale: 0.85,
       scrollTrigger: {
         trigger: "#about",
         start: "bottom 80%",
