@@ -10,7 +10,8 @@ export const projects = [
   {
     id: 1,
     name: "CineHaven Landing Page",
-    description: "A modern and responsive landing page for a wedding filmmaker",
+    description:
+      "Designed and developed a modern, responsive landing page for a wedding filmmaker, showcasing their portfolio with clean visuals and smooth user experience.",
     href: "jethrodanebadar.github.io/Cinehaven/",
     image: "images/Cinehaven.png",
     bgImage: "/assets/backgrounds/blanket.jpg",
@@ -27,7 +28,7 @@ export const projects = [
     id: 2,
     name: "Group Manager Admin Dashboard",
     description:
-      "An admin dashboard app that lets IT admins to manage group members of all the group in the organization for access purposes",
+      "Built an admin dashboard application that enables IT administrators to efficiently manage organizational groups and member access permissions.",
     href: "",
     image: "images/Exclusive.png",
     tools: [
@@ -42,7 +43,7 @@ export const projects = [
     id: 3,
     name: "After Hours Log",
     description:
-      "An app that lets public safety of the University to record all the vehicles and people that enters the campus after the curfew hours",
+      "Developed a campus security application for university public safety officers to log vehicles and individuals entering campus after curfew hours.",
     href: "",
     image: "images/Exclusive.png",
     tools: [
@@ -57,7 +58,7 @@ export const projects = [
     id: 4,
     name: "Course Syllabi Portal",
     description:
-      "A SharePoint webpage that dynamically displays all the syllabi for the current semester",
+      "Created a dynamic SharePoint webpage that automatically displays all syllabi for the current semester, streamlining course information access for students and faculty.",
     href: "",
     image: "images/Exclusive.png",
     tools: [
@@ -72,7 +73,7 @@ export const projects = [
     id: 5,
     name: "Summer Housing App",
     description:
-      "An app to manage student's housing every summer including the request forms, billing records, meal plans, and more.",
+      "Built a student housing management application to handle summer housing requests, billing records, meal plans, and other administrative tasks.",
     href: "",
     image: "images/Exclusive.png",
     tools: [
@@ -83,4 +84,18 @@ export const projects = [
       { id: 5, name: "Azure DevOps" },
     ],
   },
+];
+
+export const techs = [
+  "html",
+  "css",
+  "javascript",
+  "react",
+  "python",
+  "java",
+  "django",
+  "tailwind",
+  "gsap",
+  "git",
+  "nextjs",
 ];

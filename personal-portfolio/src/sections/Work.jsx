@@ -1,14 +1,15 @@
-import { projects } from "../constants/data";
+import { projects, techs } from "../constants/data";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 import { Icon } from "@iconify/react";
 import { useState, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import Tools from "./Tools";
 
 const Work = () => {
   const previewRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(null);
-  const text = `Featured projects that have given me knowledge and experience in software development`;
+  const text = `Projects that showcase my skills and the experience I’ve gained in software development.`;
   const moveX = useRef(null);
   const moveY = useRef(null);
   const mouse = useRef({ x: 0, y: 0 });
@@ -94,6 +95,7 @@ const Work = () => {
 
   return (
     <section id="work" className="flex flex-col min-h-screen">
+      <Tools techs={techs} />
       <AnimatedHeaderSection
         subTitle={"CODING WITH PURPOSE"}
         title={"WORKS"}
@@ -101,6 +103,7 @@ const Work = () => {
         textColor={"text-black"}
         withScrollTrigger={true}
       />
+
       <div
         className="relative flex flex-col font-light"
         onMouseMove={handleMouseMove}
@@ -112,6 +115,7 @@ const Work = () => {
             className="relative flex flex-col gap-1 py-5 cursor-pointer group md:gap-0"
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={() => handleMouseLeave(index)}
+            onClick={() => window.open(project.href, "_blank")}
           >
             <div
               ref={(el) => {
@@ -145,20 +149,28 @@ const Work = () => {
                 className="absolute bg-center px-14 rounded-xl"
               />
             </div>
+            <div className="px-8 md:hidden mb-8">
+              <p className="mt-4 text-[12px]">{project.description}</p>
+            </div>
           </div>
         ))}
 
         {/* destkop  */}
         <div
           ref={previewRef}
-          className="fixed -top-2/6 left-0 z-50 overflow-hidden border-8 border-black pointer-events-none w-[960px] md:block hidden opacity-0"
+          className="fixed -top-2/6 left-0 z-50 overflow-hidden border-8 border-black bg-black pointer-events-none md:w-[560px] lg:w-[720px] xl:w-[960px] md:block hidden opacity-0 p-4 text-white "
         >
           {currentIndex !== null && (
-            <img
-              src={projects[currentIndex].image}
-              alt="preview"
-              className="object-cover w-full h-full"
-            />
+            <div>
+              <img
+                src={projects[currentIndex].image}
+                alt="preview"
+                className="object-cover w-full h-full"
+              />
+              <p className="mt-4 text-white/60">
+                {projects[currentIndex].description}
+              </p>
+            </div>
           )}
         </div>
       </div>

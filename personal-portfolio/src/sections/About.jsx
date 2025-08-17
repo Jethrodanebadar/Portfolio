@@ -6,26 +6,35 @@ import gsap from "gsap";
 
 const About = () => {
   const imgRef = useRef(null);
+  const aboutRef = useRef(null);
   const text =
-    "Passionate on creating software to help and solve real world problems";
-  const aboutText = `Obsessed with building fast, intuitive apps—from pixel-perfect React UIs to bulletproof serverless backends. Every line of code is a promise: quality that users feel.
+    "Passionate about building software that solves real-world problems and creates meaningful experiences.";
 
-  When I’m not working:
+  const aboutText = `I love crafting fast, intuitive applications—whether it’s designing sleek React UIs or engineering scalable and secure backends. My goal is to write code that not only works, but feels right for the user. 
+When I’m not coding:
 
-🎨 I am learning how to draw.
+🎨 I’m practicing drawing while working toward creating my own manga and producing concept art.
 
+🎸 I enjoy music sessions while thinking—it's my way to focus, relax, and let creativity flow as I code or plan projects.`;
 
-🎸 Enjoying music while CI pipelines pass (multitasking at its finest)`;
   useGSAP(() => {
-    gsap.to("#about", {
+    const about = aboutRef.current;
+    gsap.to(about, {
       scale: 0.85,
+      ease: "power1.inOut",
       scrollTrigger: {
-        trigger: "#about",
+        trigger: about,
         start: "bottom 80%",
         end: "bottom 20%",
         scrub: true,
+        onUpdate: (self) => {
+          if (self.progress > 0) {
+            about.classList.add("rounded-b-4xl");
+          } else {
+            about.classList.remove("rounded-b-4xl");
+          }
+        },
       },
-      ease: "power1.inOut",
     });
 
     gsap.set(imgRef.current, {
@@ -39,7 +48,7 @@ const About = () => {
     });
   });
   return (
-    <section id="about" className="min-h-screen bg-black rounded-b-4xl">
+    <section ref={aboutRef} className="min-h-screen bg-black">
       <AnimatedHeaderSection
         subTitle={"CODING WITH PURPOSE"}
         title={"ABOUT"}

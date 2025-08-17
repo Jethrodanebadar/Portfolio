@@ -5,7 +5,7 @@ const Hero = () => {
       create real-world solutions.`;
 
   return (
-    <section className="flex flex-col justify-end min-h-screen">
+    <section id="home" className="flex flex-col justify-end min-h-screen">
       <AnimatedHeaderSection
         subTitle={"No errors detected"}
         title={"Jethro Badar"}
