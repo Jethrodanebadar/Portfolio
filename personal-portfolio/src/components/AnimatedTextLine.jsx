@@ -29,7 +29,7 @@ const AnimatedTextLine = ({ text, className }) => {
         <span
           key={index}
           ref={(el) => (lineRefs.current[index] = el)}
-          className="block leading-relaxed tracking-wide text-pretty"
+          className="block leading-relaxed tracking-wide text-pretty text-[14px] md:text-[16px] lg:text-[20px]"
         >
           {line}
         </span>
