@@ -20,7 +20,7 @@ When I’m not coding:
   useGSAP(() => {
     const about = aboutRef.current;
     gsap.to(about, {
-      scale: 0.85,
+      scale: 0.95,
       ease: "power1.inOut",
       scrollTrigger: {
         trigger: about,
