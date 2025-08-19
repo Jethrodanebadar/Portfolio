@@ -37,7 +37,7 @@ const Skills = () => {
   });
 
   return (
-    <section className=" overflow-hidden font-light leading-snug text-center mt-8 mb-24 md:mb-32 contact-text-responsive">
+    <section className=" overflow-hidden font-light leading-snug text-center mt-8 mb-24 contact-text-responsive">
       <div
         id="title-service-1"
         className="font-normal skills-text-responsive items-center"
