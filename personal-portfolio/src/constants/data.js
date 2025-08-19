@@ -12,7 +12,7 @@ export const projects = [
     name: "CineHaven Landing Page",
     description:
       "Designed and developed a modern, responsive landing page for a wedding filmmaker, showcasing their portfolio with clean visuals and smooth user experience.",
-    href: "jethrodanebadar.github.io/Cinehaven/",
+    href: "http://jethrodanebadar.github.io/Cinehaven/",
     image: "images/Cinehaven.png",
     bgImage: "/assets/backgrounds/blanket.jpg",
     tools: [
@@ -66,7 +66,6 @@ export const projects = [
       { id: 2, name: "Power Automate" },
       { id: 3, name: "Power Apps" },
       { id: 4, name: "SPFx Framework (TypeScript" },
-      { id: 5, name: "Microsoft Forms" },
     ],
   },
   {
