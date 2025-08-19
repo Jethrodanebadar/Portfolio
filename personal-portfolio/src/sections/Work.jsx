@@ -94,7 +94,7 @@ const Work = () => {
   };
 
   return (
-    <section id="work" className="flex flex-col min-h-screen">
+    <section id="work" className="flex flex-col min-h-screen mb-24 md:mb-0">
       <Tools techs={techs} />
       <AnimatedHeaderSection
         subTitle={"CODING WITH PURPOSE"}
