@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 const AnimatedTextLine = ({ text, className }) => {
   const containerRef = useRef(null);
   const lineRefs = useRef([]);
-  const lines = text.split("\n").filter((line) => line.trim() !== "");
+  const lines = text.split("\n");
 
   useGSAP(() => {
     if (lineRefs.current.length > 0) {
@@ -31,7 +31,7 @@ const AnimatedTextLine = ({ text, className }) => {
           ref={(el) => (lineRefs.current[index] = el)}
           className="block leading-relaxed tracking-wide text-pretty text-[14px] md:text-[16px] lg:text-[20px]"
         >
-          {line}
+          {line === "" ? "\u00A0" : line}
         </span>
       ))}
     </div>
