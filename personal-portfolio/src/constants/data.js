@@ -12,7 +12,7 @@ export const projects = [
     name: "CineHaven Landing Page",
     description:
       "Designed and developed a modern, responsive landing page for a wedding filmmaker, showcasing their portfolio with clean visuals and smooth user experience.",
-    href: "http://jethrodanebadar.github.io/Cinehaven/",
+    href: "http://jethrodanebadar.github.io/CineHaven/",
     image: "images/Cinehaven.png",
     bgImage: "/assets/backgrounds/blanket.jpg",
     tools: [
