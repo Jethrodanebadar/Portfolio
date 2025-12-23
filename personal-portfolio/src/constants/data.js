@@ -86,15 +86,16 @@ export const projects = [
 ];
 
 export const techs = [
-  "html",
-  "css",
-  "javascript",
-  "react",
-  "python",
-  "java",
-  "django",
-  "tailwind",
-  "gsap",
-  "git",
-  "nextjs",
+  "CI/CD",
+  "HTML/CSS",
+  "SQL",
+  "Docker",
+  "Linux",
+  "Javascript",
+  "React",
+  "Python",
+  "Java",
+  "Django",
+  "Tailwind",
+  "Git",
 ];
