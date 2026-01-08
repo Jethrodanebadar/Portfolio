@@ -93,6 +93,7 @@ export const techs = [
   "Linux",
   "Javascript",
   "React",
+  "TypeScript",
   "Python",
   "Java",
   "Django",

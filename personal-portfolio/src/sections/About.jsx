@@ -10,11 +10,11 @@ const About = () => {
   const text =
     "Passionate about building software that solves real-world problems and creates meaningful experiences.";
 
-  const aboutText = `I’m a Backend Software Engineer with hands-on experience building full-stack production-grade systems using Python and Django, including applications serving over 3,000 users. I enjoy designing REST APIs, database schemas, and backend workflows that are reliable, maintainable, and scalable. Through my projects, I’ve gained experience in full-stack development, cloud deployment basics, and system reliability, and I’m excited to continue growing as a T-shaped engineer with a focus on backend and API design.
+  const aboutText = `I’m a Software Engineer with hands-on experience building full-stack production-grade systems using Python and Django, including applications serving over 3,000 users. I enjoy designing database schemas, and software architecture that are reliable, maintainable, and scalable. Through my projects, I’ve gained experience in full-stack development, cloud deployment basics, and system reliability, and I’m excited to continue growing as a softare engineer.
 
 When I’m not coding:
 
-🎨 I’m practicing drawing while working toward creating illustrations and my own manga. 
+🎨 I’m practicing drawing while working toward creating pen illustrations. 
 
 🎸 I enjoy music sessions while thinking—it's my way to focus, relax, and let creativity flow as I code or plan projects.`;
 
